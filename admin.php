@@ -265,6 +265,7 @@
         </main>
         <footer>
             <p>&copy; 2024 Perpustakaan Seruni | All Rights Reserved</p>
+            
             <!-- Modal for Add Book -->
             <div id="addBookModal" class="modal">
                 <div class="modal-content">
@@ -281,7 +282,20 @@
                         <input type="number" id="bookYear" name="bookYear" required>
                         
                         <label for="bookGenre">Genre:</label>
-                        <input type="text" id="bookGenre" name="bookGenre" required>
+                        <select id="bookGenre" name="bookGenre" required>
+                            <option value="Romance">Romance</option>
+                            <option value="History">History</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Inspiratif">Inspiratif</option>
+                            <option value="Psikologi">Psikologi</option>
+                            <option value="Keluarga">Keluarga</option>
+                            <option value="Petualangan">Petualangan</option>
+                        </select>
                         
                         <button type="submit">Simpan</button>
                     </form>
@@ -348,7 +362,7 @@
                 </div>
             </div>
 
-            <!-- Modal for Edit Book -->
+            <!-- Modal untuk Edit Buku -->
             <div id="editBookModal" class="modal">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('editBookModal')">&times;</span>
@@ -366,7 +380,21 @@
                         <input type="number" id="editBookYear" name="tahun_terbit" required>
 
                         <label for="editBookGenre">Genre:</label>
-                        <input type="text" id="editBookGenre" name="genre" required>
+                        <select id="editBookGenre" name="genre" required>
+                            <option value="">Pilih Genre</option>
+                            <option value="Romance">Romance</option>
+                            <option value="History">History</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Science Fiction">Science Fiction</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Mystery">Mystery</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Inspirational">Inspirational</option>
+                            <option value="Psikologi">Psikologi</option>
+                            <option value="Keluarga">Keluarga</option>
+                            <option value="Petualangan">Petualangan</option>
+                        </select>
 
                         <button type="submit">Simpan Perubahan</button>
                     </form>

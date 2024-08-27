@@ -142,3 +142,40 @@ footer {
     margin-top: 20px;
 }
 
+/* Styling untuk form sorting */
+.sort-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between select elements and button */
+}
+
+.sort-container select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff80ab;
+    border-radius: 4px;
+    outline: none;
+    background-color: #fff;
+    color: #333; /* Darker text for readability */
+    margin-right: 10px;
+}
+
+.sort-container select option {
+    background-color: #fff;
+    color: #333;
+}
+
+.sort-container button {
+    background-color: #ff80ab; /* Bright pink button */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.sort-container button:hover {
+    background-color: #ff4081; /* Slightly darker pink on hover */
+}
