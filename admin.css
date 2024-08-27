@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec; /* Light pink background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Bright pink to soft purple */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-section {
+    margin-bottom: 40px;
+}
+
+.table-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #000000; /* Ubah warna font menjadi hitam */
+}
+
+
+.btn-action {
+    background-color: #ff80ab; /* Bright pink button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.btn-action:hover {
+    background-color: #ff4081; /* Slightly darker pink on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Matching gradient for table header */
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fce4ec; /* Light pink background for even rows */
+}
+
+.btn-edit, .btn-delete {
+    background: none;
+    border: none;
+    color: #ff80ab;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.btn-edit:hover {
+    color: #c684f1; /* Light purple on hover */
+}
+
+.btn-delete:hover {
+    color: #ff4081; /* Slightly darker pink on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Gradient for footer */
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Modal Background */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Darker background for better contrast */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #ffffff; /* White background for the content */
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #ddd; /* Lighter border */
+    width: 80%;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Close Button */
+.close {
+    color: #666; /* Slightly darker close button color */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000; /* Dark color on hover */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Modal Form Elements */
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-content label {
+    margin-bottom: 5px;
+    color: #333; /* Dark color for labels */
+}
+
+.modal-content input,
+.modal-content textarea {
+    margin-bottom: 10px;
+    padding: 8px; /* Padding for better text entry */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background-color: #ff80ab; /* Pink button */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.modal-content button:hover {
+    background-color: #ff4081; /* Darker pink on hover */
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Sesuaikan lebar sesuai kebutuhan */
+    margin-bottom: 24px;
+    border-radius: 4px;
+    padding: 0px;
+    background-color: white;
+}
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff80ab;
+    border-radius: 20px 0 0 20px;
+    width: 200px;
+    outline: none;
+}
+
+.search-icon {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ff80ab;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-icon i {
+    color: #ff6f91; /* Contoh warna pink */
+    font-size: 16px;
+}
+
+/* Styling for the "Dikembalikan" button */
+.btn-return {
+    background-color: #ff80ab; /* Bright pink sesuai tema */
+    color: white; /* Warna teks putih */
+    border: none; /* Hilangkan border */
+    padding: 8px 12px; /* Tambahkan padding */
+    border-radius: 4px; /* Buat sudut tombol lebih membulat */
+    cursor: pointer; /* Ubah kursor menjadi pointer */
+    font-size: 14px; /* Ukuran font */
+    transition: background-color 0.3s ease; /* Animasi saat hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan shadow */
+}
+
+/* Styling for the "Dikembalikan" button on hover */
+.btn-return:hover {
+    background-color: #ff4081; /* Slightly darker pink on hover */
+}
+

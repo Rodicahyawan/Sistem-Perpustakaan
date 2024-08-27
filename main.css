@@ -1,0 +1,144 @@
+/* Styling untuk body dan container */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fce4ec; /* Light pink background */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Styling untuk header */
+header {
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Bright pink to soft purple */
+    color: white;
+    padding: 40px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+/* Styling untuk main content */
+main {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 300px; /* Sesuaikan lebar sesuai kebutuhan */
+    margin-bottom: 24px;
+    border-radius: 4px;
+    padding: 0px;
+    background-color: white;
+}
+.search-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ff80ab;
+    border-radius: 20px 0 0 20px;
+    width: 200px;
+    outline: none;
+}
+
+.search-icon {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ff80ab;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.search-icon i {
+    color: #ff6f91; /* Contoh warna pink */
+    font-size: 16px;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+thead {
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Matching gradient for table header */
+    color: white;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fce4ec; /* Light pink background for even rows */
+}
+
+/* Styling untuk tombol pinjam */
+.btn-pinjam {
+    background-color: #ff80ab; /* Bright pink button */
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.btn-pinjam i {
+    margin-right: 8px;
+}
+
+.btn-pinjam:hover {
+    background-color: #ff4081; /* Slightly darker pink on hover */
+}
+
+/* Menghapus kelas lama untuk tombol edit dan delete */
+.btn-edit, .btn-delete {
+    display: none;
+}
+
+/* Styling untuk footer dengan background gradasi */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #ff80ab, #c684f1); /* Gradient for footer */
+    color: white;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+

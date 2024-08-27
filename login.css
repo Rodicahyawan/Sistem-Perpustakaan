@@ -1,0 +1,107 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body style */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff80ab, #c684f1); /* Pink to purple gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Container style */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for container */
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Header style */
+h1 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Form style */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label style */
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+/* Input field style */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #ff80ab; /* Pink border on focus */
+    outline: none;
+}
+
+/* Button style */
+button {
+    background-color: #ff80ab; /* Pink button background */
+    color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #c684f1; /* Light purple on hover */
+    transform: scale(1.05);
+}
+
+/* Paragraph style */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Link style */
+a {
+    color: #ff80ab; /* Pink link */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
