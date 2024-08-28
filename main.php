@@ -66,7 +66,6 @@
                                 <option value="thriller" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'thriller') ? 'selected' : ''; ?>>Thriller</option>
                                 <option value="comedy" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'comedy') ? 'selected' : ''; ?>>Comedy</option>
                                 <option value="inspiratif" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'inspiratif') ? 'selected' : ''; ?>>Inspiratif</option>
-                                <option value="sejarah" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'sejarah') ? 'selected' : ''; ?>>Sejarah</option>
                                 <option value="psikologi" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'psikologi') ? 'selected' : ''; ?>>Psikologi</option>
                                 <option value="keluarga" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'keluarga') ? 'selected' : ''; ?>>Keluarga</option>
                                 <option value="petualangan" <?php echo (isset($_GET['genre']) && $_GET['genre'] == 'petualangan') ? 'selected' : ''; ?>>Petualangan</option>
