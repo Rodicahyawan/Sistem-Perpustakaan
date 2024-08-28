@@ -1,0 +1,52 @@
+/* Modal Title */
+.modal-content h2 {
+    color: #ff80ab; /* Matching pink color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Input and Select Styling */
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border: 1px solid #ff80ab;
+    border-radius: 4px;
+    background-color: #fce4ec; /* Light pink background for input fields */
+}
+
+/* Input and Select Focus */
+.modal-content input:focus,
+.modal-content select:focus {
+    border-color: #c684f1; /* Soft purple border on focus */
+    outline: none;
+}
+
+/* Submit Button Styling */
+.modal-content button[type="submit"] {
+    background-color: #ff80ab;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for button */
+}
+
+/* Submit Button Hover Effect */
+.modal-content button[type="submit"]:hover {
+    background-color: #ff4081; /* Slightly darker pink on hover */
+}
+
+/* Label Styling */
+.modal-content label {
+    font-size: 16px;
+    color: #ff80ab; /* Matching pink color */
+    margin-bottom: 5px;
+    display: block;
+}

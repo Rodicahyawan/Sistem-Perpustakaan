@@ -9,6 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
+    // Debugging: Tampilkan data yang diterima
+    echo "Email: $email<br>";
+    echo "Password: $password<br>";
+
     // Query untuk memeriksa data login admin
     $sql = "SELECT * FROM admin WHERE email = ? AND password = ?";
 
@@ -75,7 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                   <body>
                       <div class='message'>
                           <h1>Login Gagal</h1>
-                          <p>Email atau password salah. Silahkan <a href='index.html'>coba lagi</a>.</p>
+                          <p>Email atau password salah. Silahkan <a href='login_admin.php'>coba lagi</a>.</p>
                       </div>
                   </body>
                   </html>";
