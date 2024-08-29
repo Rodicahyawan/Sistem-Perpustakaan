@@ -42,12 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt_pinjam->bind_param("iiss", $buku_id, $id_anggota, $tanggal_pinjam, $tanggal_kembali);
 
         if ($stmt_pinjam->execute()) {
-            // Update status peminjaman buku
-            $sql_update_status = "UPDATE buku SET status_peminjaman = 'dipinjam' WHERE id_buku = ?";
-            $stmt_update_status = $mysqli->prepare($sql_update_status);
-            $stmt_update_status->bind_param("i", $buku_id);
-            $stmt_update_status->execute();
-
+            // Tidak perlu lagi update status peminjaman buku secara manual
             echo "Peminjaman buku berhasil! Tanggal pengembalian buku maksimal: " . $tanggal_kembali;
         } else {
             echo "Peminjaman gagal: " . $stmt_pinjam->error;

@@ -8,14 +8,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $penulis = $_POST['bookAuthor'];
     $tahun_terbit = $_POST['bookYear'];
     $genre = $_POST['bookGenre'];
+    $status_peminjaman = 'Tersedia';  // Atur default status peminjaman
 
-    // Query untuk menyimpan data ke tabel buku
-    $sql = "INSERT INTO buku (judul_buku, penulis, tahun_terbit, genre) VALUES (?, ?, ?, ?)";
+    // Query untuk memanggil stored procedure tambah_buku
+    $sql = "CALL tambah_buku(?, ?, ?, ?, ?)";
 
     // Mempersiapkan statement
     if ($stmt = $mysqli->prepare($sql)) {
         // Bind parameter ke query
-        $stmt->bind_param("ssis", $judul_buku, $penulis, $tahun_terbit, $genre);
+        $stmt->bind_param("ssiss", $judul_buku, $penulis, $tahun_terbit, $genre, $status_peminjaman);
 
         // Eksekusi query
         if ($stmt->execute()) {

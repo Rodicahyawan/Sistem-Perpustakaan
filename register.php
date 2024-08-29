@@ -13,16 +13,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
 
-    // Query untuk menyimpan data ke tabel anggota
-    $sql = "INSERT INTO anggota (nama_anggota, no_telepon, tanggal_lahir, alamat, email, password) VALUES (?, ?, ?, ?, ?, ?)";
-
-    // Mempersiapkan statement
-    if ($stmt = $mysqli->prepare($sql)) {
+    // Panggil stored procedure
+    $sql = "CALL RegisterAnggota(?, ?, ?, ?, ?, ?)";
+    $stmt = $mysqli->prepare($sql);
+    
+    if ($stmt) {
         // Bind parameter ke query
         $stmt->bind_param("ssssss", $nama_anggota, $no_telepon, $tanggal_lahir, $alamat, $email, $password);
-
-        // Eksekusi query
-        if ($stmt->execute()) {
+        
+        try {
+            // Eksekusi query
+            $stmt->execute();
+            
             echo "<!DOCTYPE html>
                   <html lang='en'>
                   <head>
@@ -69,12 +71,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                       </div>
                   </body>
                   </html>";
-        } else {
-            echo "Gagal Registrasi: " . $stmt->error;
+        } catch (Exception $e) {
+            echo "Terjadi kesalahan: " . $e->getMessage();
+        } finally {
+            // Menutup statement dan koneksi
+            $stmt->close();
         }
-
-        // Menutup statement
-        $stmt->close();
     } else {
         echo "Gagal mempersiapkan statement: " . $mysqli->error;
     }
